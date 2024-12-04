@@ -6,9 +6,23 @@
     border: solid 3px blue;
     border-radius: 10px;
     padding: 20px;
+    animation: entry 1s;
 }
 
 #lightbox::backdrop {
     background: rgb(255, 81, 0);
     opacity: 0.4;
+    animation: entry-back 2s;
+}
+
+@keyframes entry {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes entry-back {
+    0% {
+        opacity: 0;
+    }
 }
